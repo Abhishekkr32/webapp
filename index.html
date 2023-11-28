@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Hub</title>
+     <link rel="icon" href="favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <header>
+    <nav>
+      <div class="main-nav container flex">
+        <div>
+          <a href="#" onclick="reload()" class="company-logo">
+            <img src="https://i0.wp.com/www.indcareer.com/news/wp-content/uploads/2023/02/LPU-Becomes-the-Only-University-in-India-to-have-Jio.JPG?w=1287&ssl=1" alt="company logo" />
+            <h1> <b>UNI.NEWS</b> </h1>
+          </a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')" >IPL</li>
+            <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')" >Finance</li>
+            <li class="hover-link nav-item"  id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            <li class="hover-link nav-item"  id="technology" onclick="onNavItemClick('technology')">Technology</li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <input id="search-text" type="text" class="news-input" placeholder="e.g.Science" />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+    </body>
+
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+       <template id="template-news-card">
+         <div class="card">
+          <div class="card-header">
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="newsimage"
+              id="news-img"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class ="news-source" id="news-source">End Gadgett 26/08/2023</h6>
+            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptates repellat architecto accusamus obcaecati, labore sunt illum veniam porro magni?</p>
+          </div>
+        </div>
+  </template>
+    </main>
+
+
+
+
+  <footer>
+  <div class="container">
+    <p>&copy; 2023 LPU.UNI.NEWS. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/abhishek-kr31">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+      <p>-Abhishek Kumar-</p>
+    </div>
+  </div>
+</footer>
+    <script src="index.js"></script>
+  </body>
+
+</html>
